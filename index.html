@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#447b9c">
+  <meta name="description" content="AULA 7: repositorio educativo para compartir y consultar materiales de estudio.">
+  <title>AURA SIXSEVEN — Repositorio educativo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16M8 7h8m-8 4h8"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M9 21v-8h6v8"/></symbol>
+    <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 6a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M3 9h18"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8m-8 4h8"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0 1 14 0"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"/><path d="M10 21h4"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V4m-5 5 5-5 5 5"/><path d="M4 16v4h16v-4"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m18 6-12 12M6 6l12 12"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="m12 3 1.9 5.8L20 11l-6.1 2.2L12 19l-2-5.8L4 11l6-2.2zM19 14l1.1 2.9L23 18l-2.9 1.1L19 22l-1.1-2.9L15 18l2.9-1.1z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V5m0 0c5-4 9 4 14 0v11c-5 4-9-4-14 0"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5"/><path d="M4 17v4h16v-4"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 12.5h5"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  </svg>
+
+  <div class="auth-gate" id="authGate">
+    <div class="auth-gate-panel">
+      <aside class="auth-gate-side">
+        <div class="auth-gate-logo">
+          <span class="brand-mark"><svg class="icon"><use href="#i-book"/></svg></span>
+          <span class="brand-name">AURA <b>SIXSEVEN</b><small>REPOSITORIO EDUCATIVO</small></span>
+        </div>
+        <p class="eyebrow">ESCUELA TÉCNICA N.º 7 · LAVALLE</p>
+        <h1>Tu biblioteca escolar, siempre a mano.</h1>
+        <p class="auth-gate-text">Iniciá sesión para explorar y compartir apuntes de todos los años y materias.</p>
+        <ul class="auth-gate-points">
+          <li><span>✦</span> Materiales de todos los años y materias.</li>
+          <li><span>✦</span> Vista previa de PDF e imágenes al instante.</li>
+          <li><span>✦</span> Compartí tus apuntes con otros estudiantes.</li>
+        </ul>
+        <p class="auth-gate-note">Espacio exclusivo para estudiantes y docentes de la ET7.</p>
+      </aside>
+      <section class="auth-gate-card">
+        <div class="auth-gate-card-head">
+          <p class="eyebrow">BIENVENIDO/A</p>
+          <h2 id="authGateTitle">Ingresá a AURA 67</h2>
+          <p>Elegí iniciar sesión o crear tu cuenta para entrar al repositorio.</p>
+        </div>
+        <div class="auth-tabs" role="tablist" aria-label="Acceso a AULA 7">
+          <button type="button" class="auth-tab active" id="loginTab" role="tab" aria-selected="true" aria-controls="loginForm">Iniciar sesión</button>
+          <button type="button" class="auth-tab" id="registerTab" role="tab" aria-selected="false" aria-controls="registerForm">Crear cuenta</button>
+        </div>
+        <form class="auth-form" id="loginForm" role="tabpanel" aria-labelledby="loginTab" autocomplete="off">
+          <p class="auth-intro">Ingresá con tu correo y contraseña.</p>
+          <label>Correo electrónico<input name="email" type="email" autocomplete="off" required maxlength="254" placeholder="tucorreo@ejemplo.com"></label>
+          <label>Contraseña<input name="password" type="password" autocomplete="off" required placeholder="Tu contraseña"></label>
+          <button class="primary-button" type="submit">Iniciar sesión</button>
+          <p class="auth-demo-hint" id="authDemoHint">Tocá un campo vacío para completar los datos de prueba.</p>
+        </form>
+        <form class="auth-form" id="registerForm" role="tabpanel" aria-labelledby="registerTab" autocomplete="off" hidden>
+          <p class="auth-intro">Completá tus datos para crear tu cuenta.</p>
+          <div class="form-grid">
+            <label>Nombre<input name="first_name" type="text" autocomplete="off" required maxlength="80"></label>
+            <label>Apellido<input name="last_name" type="text" autocomplete="off" required maxlength="80"></label>
+            <label>Correo electrónico<input name="email" type="email" autocomplete="off" required maxlength="254" pattern=".*\.et7.*" placeholder="nombre.et7@ejemplo.com"><small class="field-help">Debe incluir .et7, por ejemplo alumno.et7@gmail.com.</small></label>
+            <label>Contraseña<input name="password" type="password" autocomplete="new-password" required minlength="10"></label>
+            <label>Año académico<select name="year_id" id="registerYear" required><option value="">Seleccioná un año</option></select></label>
+            <label>División<select name="division_id" id="registerDivision" required disabled><option value="">Seleccioná una división</option></select></label>
+          </div>
+          <label class="policy-check"><input name="policy_accepted" type="checkbox" required><span>Acepto las políticas de publicación y uso responsable de AULA 7.</span></label>
+          <button class="primary-button" type="submit">Crear cuenta</button>
+        </form>
+        <div class="demo-accounts" id="demoAccounts">
+          <div class="demo-accounts-head"><span class="eyebrow">ACCESOS DE PRUEBA</span><small>Elegí un perfil y tocá “Usar”.</small></div>
+          <div class="demo-account selected" data-demo-role="student">
+            <div><strong>Alumno</strong><small>alumno.et7@gmail.com</small></div>
+            <code>AlumnoET7.2026</code>
+            <button type="button" class="secondary-button demo-use" data-demo-email="alumno.et7@gmail.com" data-demo-password="AlumnoET7.2026" data-demo-role="student">Usar</button>
+          </div>
+          <div class="demo-account" data-demo-role="admin">
+            <div><strong>Administrador</strong><small>admin.et7@gmail.com</small></div>
+            <code>AdminET7.2026</code>
+            <button type="button" class="secondary-button demo-use" data-demo-email="admin.et7@gmail.com" data-demo-password="AdminET7.2026" data-demo-role="admin">Usar</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="app-shell" id="appShell" hidden>
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" data-section="home" aria-label="AULA 7, ir al inicio">
+        <span class="brand-mark"><svg class="icon"><use href="#i-book"/></svg></span>
+        <span class="brand-name">AURA <b>SIXSEVEN</b><small>REPOSITORIO EDUCATIVO</small></span>
+      </a>
+      <div class="school-label">ESCUELA TÉCNICA N.º 7</div>
+      <nav class="side-nav" aria-label="Navegación principal">
+        <button class="nav-link active" type="button" data-section="home"><svg class="icon"><use href="#i-home"/></svg><span>Inicio</span></button>
+        <button class="nav-link" type="button" data-section="repository"><svg class="icon"><use href="#i-folder"/></svg><span>Repositorio</span></button>
+        <button class="nav-link" type="button" data-section="mine"><svg class="icon"><use href="#i-file"/></svg><span>Publicaciones</span></button>
+        <button class="nav-link" type="button" data-section="community"><svg class="icon"><use href="#i-chat"/></svg><span>Comunidad</span></button>
+        <button class="nav-link" type="button" data-section="students"><svg class="icon"><use href="#i-users"/></svg><span>Alumnos</span></button>
+        <button class="nav-link" type="button" data-section="profile"><svg class="icon"><use href="#i-user"/></svg><span>Mi perfil</span></button>
+        <button class="nav-link admin-nav" type="button" id="adminNav" data-section="admin" hidden><svg class="icon"><use href="#i-check"/></svg><span>Moderación</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="help-card">
+          <strong>Compartir también es aprender</strong>
+          <p>Compartí tus apuntes para que otros puedan estudiar.</p>
+          <button type="button" class="text-button" data-open-upload>Compartir material <span>→</span></button>
+        </div>
+        <div class="profile-mini">
+          <div class="avatar" id="sidebarAvatar">E</div><div><strong>Estudiante</strong><small>Sesión activa</small></div><span class="online-dot" aria-label="Sesión activa"></span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button class="icon-button mobile-menu" type="button" id="menuToggle" aria-label="Abrir menú" aria-controls="sidebar" aria-expanded="false"><svg class="icon"><use href="#i-menu"/></svg></button>
+        <div class="breadcrumb"><span>Espacio educativo</span><svg class="icon"><use href="#i-chevron"/></svg><strong id="breadcrumbCurrent">Inicio</strong></div>
+        <div class="topbar-actions"><span class="demo-label"><span></span><span id="connectionLabel">Conectando...</span></span><button class="icon-button notification-button" type="button" id="notificationButton" aria-label="Notificaciones"><svg class="icon"><use href="#i-bell"/></svg></button><button type="button" class="avatar avatar-small profile-button" data-section="profile" aria-label="Abrir perfil">A</button></div>
+      </header>
+
+      <div class="page-wrap">
+        <section class="view-section active" id="homeView">
+          <div class="welcome-row">
+            <div><p class="eyebrow">TU BIBLIOTECA ESCOLAR</p><h1 id="greetingTitle">Hola, estudiante <span class="wave">✦</span></h1><p class="intro-copy">Encontrá y compartí apuntes para estudiar.</p></div>
+            <button type="button" class="primary-button" data-open-upload><svg class="icon"><use href="#i-upload"/></svg> Compartir material</button>
+          </div>
+          <form class="search-bar" id="globalSearchForm" role="search">
+            <svg class="icon"><use href="#i-search"/></svg><input id="globalSearch" type="search" autocomplete="off" placeholder="Buscá una materia, un tema o un documento..." aria-label="Buscar materiales"><kbd>Enter</kbd>
+          </form>
+          <div class="section-heading">
+            <div><p class="eyebrow">EXPLORÁ POR NIVEL</p><h2>Años académicos</h2></div>
+            <button type="button" class="quiet-link" data-section="repository">Ver repositorio <span>→</span></button>
+          </div>
+          <div class="year-grid" id="yearGrid"></div>
+          <div class="section-heading recent-heading">
+            <div><p class="eyebrow">PARA SEGUIR APRENDIENDO</p><h2>Materiales recientes</h2></div>
+            <button type="button" class="quiet-link" data-section="repository">Ver todos <span>→</span></button>
+          </div>
+          <div class="document-list" id="recentDocuments"></div>
+          <div class="bottom-note"><span class="note-mark">✳</span> Un espacio creado por estudiantes, para estudiantes.</div>
+        </section>
+
+        <section class="view-section" id="repositoryView" hidden>
+          <div class="page-title-row">
+            <div><p class="eyebrow">BIBLIOTECA DIGITAL</p><h1>Repositorio</h1><p class="intro-copy">Explorá materiales de todos los años y materias.</p></div>
+            <button type="button" class="primary-button" data-open-upload><svg class="icon"><use href="#i-upload"/></svg> Compartir material</button>
+          </div>
+          <form class="search-bar repository-search" id="repositorySearchForm" role="search"><svg class="icon"><use href="#i-search"/></svg><input id="repositorySearch" type="search" autocomplete="off" placeholder="Buscar por título, materia o archivo..." aria-label="Buscar en el repositorio"></form>
+          <div class="filter-row">
+            <label class="filter-select"><span class="sr-only">Filtrar por año</span><select id="yearFilter"><option value="">Todos los años</option></select><svg class="icon"><use href="#i-down"/></svg></label>
+            <label class="filter-select"><span class="sr-only">Filtrar por división</span><select id="divisionFilter"><option value="">Todas las divisiones</option></select><svg class="icon"><use href="#i-down"/></svg></label>
+            <label class="filter-select"><span class="sr-only">Filtrar por turno</span><select id="shiftFilter"><option value="">Todos los turnos</option></select><svg class="icon"><use href="#i-down"/></svg></label>
+            <label class="filter-select"><span class="sr-only">Filtrar por materia</span><select id="subjectFilter"><option value="">Todas las materias</option></select><svg class="icon"><use href="#i-down"/></svg></label>
+            <button type="button" class="clear-filters" id="clearFilters">Limpiar filtros</button>
+            <span class="result-count" id="resultCount"></span>
+          </div>
+          <div class="subject-browse"><div class="subject-heading"><span>Materias</span><small id="subjectBrowseHint">Elegí un año para ver sus materias</small></div><div class="subject-chips" id="subjectBrowse"></div></div>
+          <div class="document-list repository-list" id="repositoryDocuments"></div>
+        </section>
+
+        <section class="view-section" id="profileView" hidden>
+          <div class="page-title-row">
+            <div><p class="eyebrow">TU CUENTA</p><h1>Mi perfil</h1><p class="intro-copy">La información de tu cuenta y tu actividad en AULA 7.</p></div>
+          </div>
+          <div class="profile-card" id="signedInPanel" hidden>
+            <div class="profile-card-top"><div class="avatar profile-avatar" id="profileInitial">A</div><div><h2 id="profileName">Estudiante</h2><p id="profileEmail"></p></div><button class="secondary-button logout-button" id="logoutButton" type="button">Cerrar sesión</button></div>
+            <div class="profile-details"><div><small>Institución</small><strong>Escuela Técnica N.º 7</strong></div><div><small>Rol</small><strong id="profileRole">Alumno</strong></div><div><small>Estado de cuenta</small><strong>Activa</strong></div></div>
+          </div>
+          <div class="profile-note" id="profileNote"><svg class="icon"><use href="#i-sparkle"/></svg><p><strong>Una cuenta por estudiante.</strong><br>Los archivos quedan pendientes hasta la revisión de un administrador.</p></div>
+        </section>
+
+        <section class="view-section" id="adminView" hidden>
+          <div class="page-title-row"><div><p class="eyebrow">REVISIÓN DEL REPOSITORIO</p><h1>Moderación</h1><p class="intro-copy">Aprobá o rechazá archivos antes de publicarlos.</p></div></div>
+          <div class="status-banner"><span class="status-banner-icon"><svg class="icon"><use href="#i-clock"/></svg></span><p><strong id="pendingCount">Publicaciones pendientes</strong><br>Solo los materiales aprobados aparecen a los estudiantes.</p></div>
+          <div class="document-list" id="adminDocuments"></div>
+          <div class="section-heading admin-rejected-heading"><div><p class="eyebrow">HISTORIAL DE MODERACIÓN</p><h2>Materiales rechazados</h2></div><span class="result-count" id="rejectedCount"></span></div>
+          <div class="document-list" id="adminRejected"></div>
+          <div class="section-heading admin-reports-heading"><div><p class="eyebrow">REPORTES DE PUBLICACIONES</p><h2>Reportes recibidos</h2></div></div>
+          <div class="report-list" id="adminReports"></div>
+        </section>
+
+        <section class="view-section" id="mineView" hidden>
+          <div class="page-title-row">
+            <div><p class="eyebrow">APUNTES COMPARTIDOS</p><h1>Publicaciones</h1><p class="intro-copy">Explorá los apuntes que compartieron los estudiantes.</p></div>
+            <button type="button" class="primary-button" data-open-upload><svg class="icon"><use href="#i-upload"/></svg> Compartir material</button>
+          </div>
+          <div class="feed-toolbar">
+            <label class="feed-toggle"><input type="checkbox" id="onlyMineToggle"> Solo mis publicaciones</label>
+            <span class="result-count" id="publicationCount"></span>
+          </div>
+          <div class="status-banner" id="myDocumentsNotice"><span class="status-banner-icon"><svg class="icon"><use href="#i-sparkle"/></svg></span><p><strong>Lo que comparte uno, lo puede ver todos.</strong><br>Los materiales pendientes se muestran con su estado hasta que un administrador los revise.</p></div>
+          <div class="document-list" id="myDocuments"></div>
+        </section>
+
+        <section class="view-section" id="communityView" hidden>
+          <div class="page-title-row">
+            <div><p class="eyebrow">CANAL DE ESTUDIANTES</p><h1>Comunidad</h1><p class="intro-copy">Charlá con tus compañeros de la Escuela Técnica N.º 7.</p></div>
+            <span class="result-count" id="commentCount"></span>
+          </div>
+          <div class="status-banner community-banner"><span class="status-banner-icon"><svg class="icon"><use href="#i-chat"/></svg></span><p><strong>Espacio de convivencia de la ET7.</strong><br>Todos los estudiantes pueden escribir; solo el administrador puede controlar y eliminar los mensajes.</p></div>
+          <div class="chat-panel">
+            <div class="chat-messages" id="communityMessages" aria-live="polite"></div>
+            <form class="chat-composer" id="commentForm">
+              <div class="avatar chat-self" id="chatAvatar">E</div>
+              <label class="sr-only" for="commentBody">Tu mensaje</label>
+              <textarea id="commentBody" name="body" rows="2" maxlength="500" placeholder="Escribí un mensaje para la comunidad..." required></textarea>
+              <button class="primary-button" type="submit">Enviar <svg class="icon"><use href="#i-chevron"/></svg></button>
+            </form>
+          </div>
+        </section>
+
+        <section class="view-section" id="studentsView" hidden>
+          <div class="page-title-row">
+            <div><p class="eyebrow">COMUNIDAD ESCOLAR</p><h1>Alumnos registrados</h1><p class="intro-copy">Todos los estudiantes con cuenta en AURA 67.</p></div>
+            <span class="result-count" id="studentCount"></span>
+          </div>
+          <div class="student-grid" id="studentGrid"></div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <div class="modal-backdrop" id="detailModal" hidden>
+    <section class="modal detail-modal" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+      <div class="modal-header"><div><p class="eyebrow">DETALLE DEL MATERIAL</p><h2 id="detailTitle"></h2></div><button class="icon-button" type="button" data-close-detail aria-label="Cerrar"><svg class="icon"><use href="#i-close"/></svg></button></div>
+      <div class="detail-meta" id="detailMeta"></div>
+      <div class="detail-preview" id="detailPreview" hidden></div>
+      <div class="detail-demo-note"><svg class="icon"><use href="#i-file"/></svg><p><strong>Material de ejemplo</strong><br>El archivo original estará disponible cuando AULA 7 tenga el servidor conectado.</p></div>
+      <div class="detail-actions">
+        <a class="primary-button download-button" id="downloadMaterial" href="#" hidden><svg class="icon"><use href="#i-download"/></svg> Descargar material</a>
+        <button class="danger-button" id="deleteMaterial" type="button" hidden>Eliminar publicación</button>
+      </div>
+      <p class="download-note" id="downloadNote" hidden>Este material todavía no está disponible para descarga.</p>
+      <button type="button" class="report-toggle" id="reportToggle"><svg class="icon"><use href="#i-flag"/></svg> Reportar este material</button>
+      <form class="report-form" id="reportForm" hidden>
+        <label>¿Por qué querés reportarlo?
+          <select name="reason" required>
+            <option value="">Seleccioná un motivo</option>
+            <option value="not_educational">No está relacionado con el estudio</option>
+            <option value="private_information">Incluye información privada</option>
+            <option value="misclassified">Está mal clasificado</option>
+            <option value="inappropriate">Contenido inapropiado</option>
+            <option value="other">Otro incumplimiento</option>
+          </select>
+        </label>
+        <label>Detalle <span>(opcional)</span><textarea name="details" maxlength="500" rows="3" placeholder="Contanos brevemente qué sucede"></textarea></label>
+        <div class="modal-actions"><button type="button" class="secondary-button" id="cancelReport">Cancelar</button><button type="submit" class="primary-button">Enviar reporte</button></div>
+      </form>
+    </section>
+  </div>
+
+  <div class="modal-backdrop" id="rejectModal" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="rejectTitle">
+      <div class="modal-header"><div><p class="eyebrow">MODERACIÓN</p><h2 id="rejectTitle">Rechazar material</h2></div><button class="icon-button" type="button" id="cancelRejectTop" aria-label="Cerrar"><svg class="icon"><use href="#i-close"/></svg></button></div>
+      <p class="modal-copy">Contanos por qué rechazás este material. El autor podrá ver el motivo.</p>
+      <form id="rejectForm">
+        <label>Motivo <span>(opcional)</span><textarea name="reason" maxlength="300" rows="3" placeholder="Ej.: No está relacionado con la materia"></textarea></label>
+        <div class="modal-actions"><button type="button" class="secondary-button" id="cancelReject">Cancelar</button><button type="submit" class="primary-button">Rechazar material</button></div>
+      </form>
+    </section>
+  </div>
+
+  <div class="modal-backdrop" id="uploadModal" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-header"><div><p class="eyebrow">SUMÁ TU APORTE</p><h2 id="modalTitle">Compartir material</h2></div><button class="icon-button" type="button" data-close-modal aria-label="Cerrar"><svg class="icon"><use href="#i-close"/></svg></button></div>
+      <p class="modal-copy">Completá los datos para organizar el material en el repositorio.</p>
+      <form id="uploadForm">
+        <div class="form-grid">
+          <label>Año académico<select name="year" id="uploadYear" required><option value="">Seleccioná un año</option></select></label>
+          <label>Turno<select name="shift_id" id="uploadShift" required><option value="">Seleccioná un turno</option></select><small class="field-help" id="uploadShiftHelp">Elegí el turno para habilitar las divisiones.</small></label>
+          <label>División<select name="division" id="uploadDivision" required disabled><option value="">Elegí turno primero</option></select></label>
+          <label>Materia<select name="subject" required><option value="">Seleccioná una materia</option></select></label>
+        </div>
+        <label class="form-label">Título <span>(opcional, máximo uno)</span><input name="title" type="text" placeholder="Ej.: Resumen de funciones"></label>
+        <label class="file-drop" for="uploadFile"><span class="file-drop-icon"><svg class="icon"><use href="#i-upload"/></svg></span><strong id="fileName">Elegí un archivo para compartir</strong><small>PDF, JPG, PNG, DOCX o PPTX · Máximo 100 MB</small><input id="uploadFile" name="file" type="file" accept=".pdf,.jpg,.jpeg,.png,.docx,.pptx" required></label>
+        <p class="form-notice">Al continuar, el material quedaría pendiente de aprobación del equipo administrador.</p>
+        <div class="modal-actions"><button type="button" class="secondary-button" data-close-modal>Cancelar</button><button type="submit" class="primary-button">Enviar para revisión <svg class="icon"><use href="#i-chevron"/></svg></button></div>
+      </form>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
