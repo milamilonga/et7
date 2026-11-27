@@ -23,3 +23,18 @@ flowchart LR
     API -->|sqlite3| DB
     API -->|Lectura / Escritura| FILES
 ```
+
+
+```mermaid
+erDiagram
+    TABLA_A {
+        int id PK
+        string nombre
+    }
+    TABLA_B {
+        int id PK
+        int tabla_a_id FK
+        string archivo_path
+    }
+    TABLA_A ||--o{ TABLA_B : contiene
+```
