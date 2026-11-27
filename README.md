@@ -1,13 +1,4 @@
 ```mermaid
-
-    TESTS -.->|Pruebas| API
-    SQL -.->|Esquema / Seed| DB
-    API -->|sqlite3| DB
-    API -->|Lectura / Escritura| FILES
-```
-
-
-```mermaid
 erDiagram
     academic_years {
         int id PK
